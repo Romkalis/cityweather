@@ -1,0 +1,35 @@
+<svg width="56.000000" height="56.000000" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_2_378_dd" x="0.000000" y="0.000000" width="56.000000" height="56.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feMorphology radius="-1" in="" result="BackgroundImageFix"/>
+			<feOffset dx="1" dy="4"/>
+			<feGaussianBlur stdDeviation="3.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.27843 0 0 0 0 0.57647 0 0 0 0 1 0 0 0 0.2 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<clipPath id="clip2_383">
+			<rect id="humidity 1" width="19.000000" height="19.000000" transform="translate(17.000000 15.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_2_384_0" x1="20.908058" y1="31.382942" x2="32.072891" y2="20.222160" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#34CDFA"/>
+			<stop offset="1.000000" stop-color="#E8D9F1"/>
+		</linearGradient>
+	</defs>
+	<g filter="url(#filter_2_378_dd)">
+		<circle id="Ellipse 2" cx="27.000000" cy="24.000000" r="19.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	</g>
+	<rect id="humidity 1" width="19.000000" height="19.000000" transform="translate(17.000000 15.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_383)">
+		<path id="Vector" d="M27.13 15.28C26.81 14.96 26.34 14.88 25.94 15.2C25.94 15.2 25.86 15.2 25.86 15.28C25.23 16.07 19.36 23.21 19.36 26.86C19.36 30.82 22.53 34 26.5 34C30.46 34 33.63 30.82 33.63 26.86C33.63 23.21 27.76 16.07 27.13 15.28Z" fill="url(#paint_linear_2_384_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M29.47 24.21L24.7 28.98L23.58 27.86L28.35 23.09L29.47 24.21Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M24.91 24.48C24.91 24.92 24.55 25.27 24.12 25.27C23.68 25.27 23.32 24.92 23.32 24.48C23.32 24.04 23.68 23.68 24.12 23.68C24.55 23.68 24.91 24.04 24.91 24.48Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M29.67 27.65C29.67 28.09 29.31 28.44 28.87 28.44C28.44 28.44 28.08 28.09 28.08 27.65C28.08 27.21 28.44 26.86 28.87 26.86C29.31 26.86 29.67 27.21 29.67 27.65Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

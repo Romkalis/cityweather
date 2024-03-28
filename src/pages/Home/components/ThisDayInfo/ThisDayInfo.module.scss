@@ -1,0 +1,57 @@
+@import '../../../../styles/variables.scss';
+
+.this__day_info {
+    display: flex;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $lite-background;
+    position: relative;
+    height: 300px;
+    max-width: 750px;
+    flex-grow: 1;
+    box-shadow: $box-shadow;
+    align-items: center;
+
+}
+
+.background {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.this__day_info_items {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    list-style: none;
+    row-gap: 20px;
+    z-index: 1;
+    padding: 42px 32px;
+
+
+}
+
+// .info__item {
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     align-items: center;
+//     gap: 20px;
+
+// }
+
+// .item__title {
+//     margin: 0;
+//     min-width: 96px;
+//     font-size: 14px;
+//     color: $text-color-neutral;
+// }
+
+// .item__text {
+//     margin: 0;
+//     font-size: 14px;
+//     color: $text-color-dark;
+// }

@@ -2,9 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1024px;
-    margin: auto;
-    padding: 5px 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
 
 .wrapper {
@@ -19,10 +18,9 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #4793FF;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.select {
+.select { 
     color: #474747;
     font-size: 16px;
 }

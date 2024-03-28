@@ -1,0 +1,24 @@
+@import '../../../../../styles/variables.scss';
+
+
+.info__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.item__title {
+    margin: 0;
+    min-width: 96px;
+    font-size: 14px;
+    color: $text-color-neutral;
+}
+
+.item__text {
+    margin: 0;
+    font-size: 14px;
+    color: $text-color-dark;
+}

@@ -1,0 +1,54 @@
+@import '../../../../styles/variables.scss';
+
+.this__day {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    background-color: $lite-background;
+    border-radius: $border-radius;
+    border: none;
+    box-shadow: $box-shadow;
+}
+
+.top__block {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // margin-bottom: 31px;
+}
+
+.main__info {
+}
+
+.degrees {
+    font-size: 96px;
+    font-weight: 500;
+    margin: 0;
+    color: $text-color;
+}
+
+.today {
+    font-size: 40px;
+    margin: 0;
+}   
+
+.weather__logo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+}
+.bottom__block {
+    padding: 0px 20px 20px 20px;
+}
+
+.bottom__text {
+    padding: 0;
+    margin: 7px;
+    font-size: 25px;
+    color: $text-color-neutral;
+}

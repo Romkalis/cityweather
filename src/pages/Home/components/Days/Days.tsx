@@ -1,5 +1,5 @@
 import { Card } from './Card'
-import s from './Days.module.scss'
+import s from './Days.module.scss';
 import { Tabs } from './Tabs'
 
 interface Props {

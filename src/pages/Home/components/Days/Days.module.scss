@@ -1,22 +1,30 @@
 @import '../../../../styles/variables.scss';
 
 .days__list {
-    padding: 0;
+    padding: 20px;
     display: flex;
     list-style: none;
-    gap: 20px;
+    // gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
     flex: 0 0;
+    border-radius: 0 0 $border-radius $border-radius;
+    background-color: $lite-background;
+    box-shadow: $box-shadow;
+
 }
 
 .days__item {
     background: $color-background;
     border-radius: $border-radius;
+    box-shadow: $box-shadow;
     width: 148px;
     height: 200px;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 11px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 p {
@@ -24,9 +32,11 @@ p {
     padding: 0;
 }
 .day__title {
+    margin-top: 11px;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 7px;
+    line-height: 22px;
 }
 
 .day__date {
@@ -38,7 +48,6 @@ p {
 .day__icon {
     width: 48px;
     height: 48px;
-    margin-bottom: 13px;
 }
 .day__temp_day {
     font-size: 18px;
@@ -56,3 +65,39 @@ p {
     font-size: 13px;
     margin-bottom: 6px;
 }
+
+
+//______________________TABS__________________________
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+}
+.tabs__wrapper {
+    display: flex;
+    gap: 15px;
+}
+.tabs__button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    background: $lite-background;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 20px;
+    cursor: pointer;
+    &:hover {
+        outline: 1px solid $text-color;
+    }
+    &:active {
+        background-color: $text-color;
+        color: $text-color-light;
+    }
+}
+
+.cancel {
+    @extend .tabs__button;
+}
+

@@ -1,6 +1,6 @@
  import s from './ThisDayInfo.module.scss'
 import cloud from '../../../../assets/images/cloud.png'
-import { ThisDayItem } from './ThisDayItem/TgisDayItem'
+import { ThisDayItem } from './ThisDayItem/ThisDayItem'
 
 
 interface Props {

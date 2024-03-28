@@ -1,4 +1,3 @@
-import React from "react";
 import { Item } from "../ThisDayInfo"
 import { GlobalSvgSelector } from "../../../../../assets/images/icons/global/GlobalSvgSelector"
 import s from './ThisDayItem.module.scss';

@@ -1,0 +1,58 @@
+@import '../../../../styles/variables.scss';
+
+.days__list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 0;
+}
+
+.days__item {
+    background: $color-background;
+    border-radius: $border-radius;
+    width: 148px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+.day__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.day__date {
+    color: $text-color-neutral;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.day__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 13px;
+}
+.day__temp_day {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0; 
+}
+.day__temp_night {
+    margin: 0;
+    color: $text-color-neutral;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+.day__info {
+    color: $text-color-neutral;
+    font-size: 13px;
+    margin-bottom: 6px;
+}

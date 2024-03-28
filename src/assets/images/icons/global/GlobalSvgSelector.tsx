@@ -1,4 +1,3 @@
-import React from "react";
 
 interface Props {
   id: string;
@@ -14,7 +13,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="0 0 65 65"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -93,7 +92,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="0 0 35 35"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -130,7 +129,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="0 0 119 119"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -170,7 +169,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="7 5 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -349,7 +348,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="7 5 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -469,7 +468,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="7 5 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -601,7 +600,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="7 5 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -703,7 +702,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="0 0 44 33"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <defs>
             <linearGradient
@@ -753,7 +752,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="0 0 44 33"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -815,7 +814,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="0 0 44 33"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>
@@ -855,7 +854,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
           viewBox="0 0 44 33"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <desc>Created with Pixso.</desc>
           <defs>

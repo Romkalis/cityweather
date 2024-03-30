@@ -1,4 +1,5 @@
 @import '../../../styles/variables.scss';
+
  .popup__background {
     position: absolute;
     width: 100%;
@@ -26,6 +27,36 @@
 
 }
 
+//-------------------------- first block
+.this__day {
+    margin: 42px 32px;
+
+}
+.degrees {
+    font-size: 60px;
+    color: $text-color;
+    margin-bottom: 12px;
+}
+.today {
+    font-size: 25px;
+    color: $text-color-dark;
+    margin-bottom: 12px;
+}
+.weather__icon {
+    svg {
+    width: 53px;
+    height: 53px;
+    }
+    margin-bottom: 12px;
+}
+
+.bottom__text {
+    font-size: 15px;
+    color: $text-color-neutral;
+}
+
+//-------------------------- second block
+
 .this__day_info {
     display: flex;
     position: relative;
@@ -40,9 +71,10 @@
     box-sizing: border-box;
     list-style: none;
     row-gap: 20px;
-    z-index: 1;
     padding: 42px 32px;
 }
+
+//-------------------------- close button
 
 .close {
     position: absolute;
@@ -50,11 +82,16 @@
     right: 20px;
     cursor: pointer;
     svg {
+        width: 36px;
+        height: 36px;
         transition: 0.3s;
     }
     &:hover {
-        svg{
+        svg {
         transform: rotate(360deg);
+        fill: #000;
         }
     }
 }
+
+

@@ -34,6 +34,19 @@ export const Popup = (props: Props) => {
   return (
     <div className={s.popup__background}>
       <section className={s.popup}>
+
+        <article className={s.this__day}>
+
+          <p className={s.degrees}> 20°</p>
+          <p className={s.today}>Cегодня</p>
+          <p className={s.weather__icon}>
+            <GlobalSvgSelector id="sunny" /> 
+          </p>
+          <p className={s.bottom__text}>Время: время сейчас</p>
+          <p className={s.bottom__text}>Город: Какой-то город</p>
+        </article>
+
+
         <div className={s.this__day_info}>
           <ul className={s.this__day_info_items}>
             {items.map((item: Item) => {
@@ -42,7 +55,7 @@ export const Popup = (props: Props) => {
           </ul>
         </div>
         <div className={s.close}>
-          <GlobalSvgSelector id={'rain'} />
+          <GlobalSvgSelector id={'close'} />
         </div>
       </section>
     </div>

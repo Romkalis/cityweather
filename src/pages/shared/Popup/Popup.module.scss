@@ -5,11 +5,14 @@
     height: 100vh;
     backdrop-filter: blur(3px);
     z-index: 999;
+    left: 0;
+    top: 0;
  }
 .popup {
     position: absolute;
-    top: calc(50% - 200px);
-    left: calc(50% - 325px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1000;
     display: flex;
     justify-content: space-between;

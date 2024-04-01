@@ -5,10 +5,10 @@
     flex-direction: column;
     width: 400px;
     height: 300px;
-    background-color: $lite-background;
+    background-color: var(#{--components-background-default});
     border-radius: $border-radius;
     border: none;
-    box-shadow: $box-shadow;
+    box-shadow: var(#{--box-shadow-default});
 }
 
 .top__block {
@@ -28,12 +28,13 @@
     font-size: 96px;
     font-weight: 500;
     margin: 0;
-    color: $text-color;
+    color: $text-color-blue;
 }
 
 .today {
     font-size: 40px;
     margin: 0;
+    color: var(#{--text-color-default});
 }   
 
 .weather__logo {

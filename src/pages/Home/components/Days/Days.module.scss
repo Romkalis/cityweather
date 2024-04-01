@@ -9,15 +9,14 @@
     justify-content: space-between;
     flex: 0 0;
     border-radius: 0 0 $border-radius $border-radius;
-    background-color: $lite-background;
-    box-shadow: $box-shadow;
+    background-color: var(#{--components-background-default});
+    box-shadow: var(#{--box-shadow-default});
 
 }
 
 .days__item {
-    background: $color-background;
+    background: var(#{--card-background-default});
     border-radius: $border-radius;
-    box-shadow: $box-shadow;
     width: 148px;
     height: 200px;
     box-sizing: border-box;
@@ -25,6 +24,10 @@
     margin-bottom: 20px;
     cursor: pointer;
     transition: 0.5s;
+
+    &:hover {
+        box-shadow: var(#{--box-shadow-default});
+    }
 }
 
 p {
@@ -37,6 +40,7 @@ p {
     font-weight: 500;
     margin-bottom: 7px;
     line-height: 22px;
+    color: var(#{--text-color-default});
 }
 
 .day__date {
@@ -53,6 +57,7 @@ p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 0; 
+    color: var(#{--text-color-default});
 }
 .day__temp_night {
     margin: 0;
@@ -83,17 +88,17 @@ p {
     border: none;
     border-radius: 5px;
     box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
-    background: $lite-background;
+    background: var(#{--body-background-default});
     font-size: 18px;
     font-weight: 400;
     padding: 7px 20px;
     cursor: pointer;
     &:hover {
-        outline: 1px solid $text-color;
+        outline: 1px solid $text-color-blue;
     }
     &:active {
-        background-color: $text-color;
-        color: $text-color-light;
+        background-color: $text-color-blue;
+        color: var(#{--text-color-default});
     }
 }
 

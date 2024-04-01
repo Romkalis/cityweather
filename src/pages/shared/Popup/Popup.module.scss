@@ -4,10 +4,11 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px) saturate(40%);
     z-index: 999;
     left: 0;
     top: 0;
+    transition: 0.5s ease;
  }
 .popup {
     position: absolute;
@@ -20,9 +21,9 @@
     align-items: center ;
     border: none;
     border-radius: $border-radius;
-    background-color: $lite-background;
+    background-color: var(#{--components-background-default});
     width: 750px;
-    box-shadow: $box-shadow;
+    box-shadow: var(#{--box-shadow-default});
     height: 300px;
 
 }
@@ -34,12 +35,12 @@
 }
 .degrees {
     font-size: 60px;
-    color: $text-color;
+    color: $text-color-blue;
     margin-bottom: 12px;
 }
 .today {
     font-size: 25px;
-    color: $text-color-dark;
+    color: var(#{--text-color-default});
     margin-bottom: 12px;
 }
 .weather__icon {
@@ -89,7 +90,7 @@
     &:hover {
         svg {
         transform: rotate(360deg);
-        fill: #000;
+        fill: var(#{--text-color-default});
         }
     }
 }

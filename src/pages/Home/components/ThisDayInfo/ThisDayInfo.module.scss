@@ -4,12 +4,12 @@
     display: flex;
     border: none;
     border-radius: $border-radius;
-    background-color: $lite-background;
+    background-color: var(#{--components-background-default});
     position: relative;
     height: 300px;
     max-width: 750px;
     flex-grow: 1;
-    box-shadow: $box-shadow;
+    box-shadow: var(#{--box-shadow-default});
     align-items: center;
 
 }
@@ -32,24 +32,3 @@
     padding: 42px 32px;
 }
 
-// .info__item {
-//     margin: 0;
-//     padding: 0;
-//     display: flex;
-//     align-items: center;
-//     gap: 20px;
-
-// }
-
-// .item__title {
-//     margin: 0;
-//     min-width: 96px;
-//     font-size: 14px;
-//     color: $text-color-neutral;
-// }
-
-// .item__text {
-//     margin: 0;
-//     font-size: 14px;
-//     color: $text-color-dark;
-// }

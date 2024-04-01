@@ -1,10 +1,48 @@
-$lite-background: #fff;
-$color-background: rgba(71, 147, 255, 0.2);
+$card-background-light: rgba(71, 147, 255, 0.2);
+$card-background-dark: #2e3035;
 
-$text-color: #4793FF;
+$text-color-blue: #4793FF;
 $text-color-dark: #000;
 $text-color-neutral: #939CB0;
 $text-color-light: #fff;
 
-$box-shadow:  2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+$box-shadow-light:  2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+$box-shadow-dark: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 $border-radius: 20px;
+
+$body-background-dark: #0d1117;
+$body-background-light: #fff;
+
+$components-background-dark: #4f4f4f;
+$components-background-light: #fff;
+
+ 
+
+//так как js не может менять scss переменные, придется создать обычные переменные 
+//css и в них передать значения scss-переменных
+
+:root {
+
+    // реализиция переключения в хендлере в компоненте Header
+
+    //---------------------body BG------------------
+    --body-background-dark: #{$body-background-dark};
+    --body-background-light: #{$body-background-light};
+    --body-background-default: var(#{--body-background-light});
+    //---------------------components BG------------------
+    --components-background-dark: #{$components-background-dark};
+    --components-background-light: #{$components-background-light};
+    --components-background-default: var(#{--components-background-light});
+    //---------------------card BG------------------
+    --card-background-light:#{$card-background-light};
+    --card-background-dark: #{$card-background-dark};
+    --card-background-default: var(#{--card-background-light});
+    //---------------------text color------------------
+    --text-color-light: #{$text-color-dark };
+    --text-color-dark: #{$text-color-light};
+    --text-color-default: var(#{--text-color-light});
+    //---------------------box shadow------------------
+    --box-shadow-light: #{$box-shadow-light};
+    --box-shadow-dark: #{$box-shadow-dark};
+    --box-shadow-default: var(#{--box-shadow-light});
+}

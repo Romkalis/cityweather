@@ -3,11 +3,9 @@ import s from "./Header.module.scss"
 import { GlobalSvgSelector } from "../../../assets/images/icons/global/GlobalSvgSelector"
 import Select from 'react-select'
 import { useTheme } from "../../../hooks/useTheme";
+import { Theme } from "../../../context/ThemeContext";
 
 interface Props {}
-
-
-
 
 export const Header = (props: Props) => {
 
@@ -23,7 +21,7 @@ export const Header = (props: Props) => {
   const colorStyles = {
     control: (styles: any) => ({
       ...styles, 
-      backgroundColor: theme.theme === 'dark' ? '#4f4f4f' : 'rgba(71, 148, 255, 0.20)', 
+      backgroundColor: theme.theme === Theme.DARK ? '#4f4f4f' : 'rgba(71, 148, 255, 0.20)', 
       borderRadius: '10px',
       fontSize: '16px',
       width: '194px',
@@ -34,7 +32,7 @@ export const Header = (props: Props) => {
     }),
     singleValue: (styles: any) => ({
       ...styles, 
-      color:  theme.theme === 'dark'  ? '#fff': '#000',
+      color:  theme.theme === Theme.DARK   ? '#fff': '#000',
       zIndex: '100'
     })
   }
@@ -43,24 +41,10 @@ export const Header = (props: Props) => {
 
   const changeTheme = () => { 
     // setTheme(theme === 'light' ? 'dark' : 'light')
-    theme.changeTheme(theme.theme === 'light' ? 'dark' : 'light')
-    console.log(theme.theme)
+    theme.changeTheme(theme.theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT)
+
   }
-  //используем useEffect, чтобы не зависеть от асинхронного useState
-  useEffect(() => {
-    
-    const root = document.querySelector(':root') as HTMLElement
 
-    const componentsStyles = ['--body-background-', '--components-background-', '--card-background-', '--text-color-', '--box-shadow-']
-
-    componentsStyles.forEach( (component => {
-      root.style.setProperty(
-      `${component}default`,  // первый парметр - что меняем
-        `var(${component}${theme.theme})` // второй - НА что меняем значение
-        )
-    }))
-
-  }, [theme])
  
 
   return (

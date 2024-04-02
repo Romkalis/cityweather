@@ -8,4 +8,4 @@ interface Props {
 export const ThemeContext = createContext<Props>({
     theme: '',
     changeTheme: () => {},
-})
+}) 

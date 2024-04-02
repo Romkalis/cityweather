@@ -2,8 +2,7 @@ import { useEffect, useState } from "react"
 import s from "./Header.module.scss"
 import { GlobalSvgSelector } from "../../../assets/images/icons/global/GlobalSvgSelector"
 import Select from 'react-select'
-import { log } from "console";
-import { compileFunction } from "vm";
+import { useTheme } from "../../../hooks/useTheme";
 
 interface Props {}
 
@@ -12,7 +11,9 @@ interface Props {}
 
 export const Header = (props: Props) => {
 
-  const [theme, setTheme] = useState('light');
+  const theme = useTheme()
+
+  // const [theme, setTheme] = useState('light');
 
   const options = [
     { value: 'city-1', label: 'Санкт-Петербург' },
@@ -22,7 +23,7 @@ export const Header = (props: Props) => {
   const colorStyles = {
     control: (styles: any) => ({
       ...styles, 
-      backgroundColor: theme === 'dark' ? '#4f4f4f' : 'rgba(71, 148, 255, 0.20)', 
+      backgroundColor: theme.theme === 'dark' ? '#4f4f4f' : 'rgba(71, 148, 255, 0.20)', 
       borderRadius: '10px',
       fontSize: '16px',
       width: '194px',
@@ -33,7 +34,7 @@ export const Header = (props: Props) => {
     }),
     singleValue: (styles: any) => ({
       ...styles, 
-      color:  theme === 'dark'  ? '#fff': '#000',
+      color:  theme.theme === 'dark'  ? '#fff': '#000',
       zIndex: '100'
     })
   }
@@ -41,9 +42,11 @@ export const Header = (props: Props) => {
 
 
   const changeTheme = () => { 
-    setTheme(theme === 'light' ? 'dark' : 'light')
+    // setTheme(theme === 'light' ? 'dark' : 'light')
+    theme.changeTheme(theme.theme === 'light' ? 'dark' : 'light')
+    console.log(theme.theme)
   }
- //используем useEffect, чтобы не зависеть от асинхронного useState
+  //используем useEffect, чтобы не зависеть от асинхронного useState
   useEffect(() => {
     
     const root = document.querySelector(':root') as HTMLElement
@@ -53,7 +56,7 @@ export const Header = (props: Props) => {
     componentsStyles.forEach( (component => {
       root.style.setProperty(
       `${component}default`,  // первый парметр - что меняем
-        `var(${component}${theme})` // второй - НА что меняем значение
+        `var(${component}${theme.theme})` // второй - НА что меняем значение
         )
     }))
 

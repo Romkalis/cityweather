@@ -88,10 +88,11 @@ p {
     border: none;
     border-radius: 5px;
     box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
-    background: var(#{--body-background-default});
+    background: var(#{--components-background-default});
     font-size: 18px;
     font-weight: 400;
     padding: 7px 20px;
+    color: var(#{--text-color-default});
     cursor: pointer;
     &:hover {
         outline: 1px solid $text-color-blue;
